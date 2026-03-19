@@ -8,6 +8,7 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const NAV_ITEMS = [
+  { key: "travel", href: "/travel-assistant" },
   { key: "timeline", href: "/timeline" },
   { key: "compare", href: "/compare" },
   { key: "layers", href: "/layers" },

@@ -138,6 +138,61 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Featured Tutorials */}
+      <section>
+        <div className="mb-6 text-center">
+          <h2 className="text-2xl font-bold sm:text-3xl">{t("featured_tutorials")}</h2>
+          <p className="mt-2 text-[var(--color-text-secondary)]">
+            {t("featured_tutorials_desc")}
+          </p>
+        </div>
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+          <Link href={`/${locale}/timeline`} className="group block">
+            <Card className="h-full border-blue-500/30 transition-all duration-200 hover:border-blue-500/60">
+              <div className="flex items-center justify-between gap-3">
+                <div className="inline-flex items-center gap-2">
+                  <span className="h-2.5 w-2.5 rounded-full bg-blue-500" />
+                  <span className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-600 dark:text-blue-300">
+                    {t("course_claude_label")}
+                  </span>
+                </div>
+                <span className="text-xs text-[var(--color-text-secondary)]">
+                  {t("course_claude_meta")}
+                </span>
+              </div>
+              <h3 className="mt-3 text-xl font-semibold group-hover:underline">
+                {t("course_claude_title")}
+              </h3>
+              <p className="mt-2 text-sm leading-7 text-[var(--color-text-secondary)]">
+                {t("course_claude_desc")}
+              </p>
+            </Card>
+          </Link>
+
+          <Link href={`/${locale}/travel-assistant`} className="group block">
+            <Card className="h-full border-emerald-500/30 transition-all duration-200 hover:border-emerald-500/60">
+              <div className="flex items-center justify-between gap-3">
+                <div className="inline-flex items-center gap-2">
+                  <span className="h-2.5 w-2.5 rounded-full bg-emerald-500" />
+                  <span className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-600 dark:text-emerald-300">
+                    {t("course_travel_label")}
+                  </span>
+                </div>
+                <span className="text-xs text-[var(--color-text-secondary)]">
+                  {t("course_travel_meta")}
+                </span>
+              </div>
+              <h3 className="mt-3 text-xl font-semibold group-hover:underline">
+                {t("course_travel_title")}
+              </h3>
+              <p className="mt-2 text-sm leading-7 text-[var(--color-text-secondary)]">
+                {t("course_travel_desc")}
+              </p>
+            </Card>
+          </Link>
+        </div>
+      </section>
+
       {/* Learning Path Preview */}
       <section>
         <div className="mb-6 text-center">
