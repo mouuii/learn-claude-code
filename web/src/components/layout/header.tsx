@@ -14,6 +14,8 @@ const NAV_ITEMS = [
   { key: "layers", href: "/layers" },
 ] as const;
 
+const GITHUB_REPO_URL = "https://github.com/mouuii/learn-claude-code";
+
 export function Header() {
   const t = useTranslations("nav");
   const pathname = usePathname();
@@ -66,7 +68,7 @@ export function Header() {
           </button>
 
           <a
-            href="https://github.com/shareAI-lab/learn-claude-code"
+            href={GITHUB_REPO_URL}
             target="_blank"
             rel="noopener"
             className="text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-white"
@@ -106,7 +108,7 @@ export function Header() {
                 {dark ? <Sun size={18} /> : <Moon size={18} />}
               </button>
               <a
-                href="https://github.com/shareAI-lab/learn-claude-code"
+                href={GITHUB_REPO_URL}
                 target="_blank"
                 rel="noopener"
                 className="flex min-h-[44px] min-w-[44px] items-center justify-center text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-white"
