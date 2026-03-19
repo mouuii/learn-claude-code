@@ -24,7 +24,7 @@ export async function generateMetadata({
 
   const messages = metaMessages.zh;
   return {
-    title: messages.meta?.title || "Learn Claude Code",
+    title: messages.meta?.title || "Agent 从小白到架构师",
     description: messages.meta?.description || "Build an AI coding agent from scratch, one concept at a time",
   };
 }
